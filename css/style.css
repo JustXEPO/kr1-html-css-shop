@@ -51,6 +51,10 @@ body {
   line-height: 1.5;
   color: var(--color-text);
   background-color: var(--color-bg);
+  background-image: url("C:/kr1-html-css-shop/images/forest.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 main,
@@ -140,6 +144,7 @@ a:focus-visible {
   padding: var(--space-xl) var(--space-lg);
   background-color: var(--color-surface-accent);
   border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .section {

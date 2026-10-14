@@ -72,3 +72,18 @@ orderForm.addEventListener('submit', (event) => {
   // Закрываем модальное окно.
   orderDialog.close();
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  // 1. Проверяем, есть ли хеш в адресной строке (например, '#order-dialog')
+  const hash = window.location.hash;
+  
+  if (hash) {
+    // 2. Ищем элемент с таким id (убирая символ '#')
+    const dialog = document.getElementById(hash.replace('#', ''));
+    
+    // 3. Проверяем, что элемент существует и это действительно тег DIALOG
+    if (dialog && dialog.tagName === 'DIALOG') {
+      dialog.showModal();
+    }
+  }
+});

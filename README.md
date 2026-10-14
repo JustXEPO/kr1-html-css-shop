@@ -115,3 +115,13 @@ GitHub Pages: https://JustXEPO.github.io/kr1-html-css-shop/
 - `order-form` — форма заявки;
 - `button` — кнопка;
 - `site-footer` — подвал сайта.
+
+## Контрольная работа №1
+
+Тема: «HTML и CSS: разработка многостраничного сайта».
+
+В проекте реализован многостраничный HTML/CSS-сайт интернет-магазина или каталога услуг.
+
+## Ссылка на опубликованный проект
+
+GitHub Pages: https://username.github.io/kr1-html-css-shop/

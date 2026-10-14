@@ -12,10 +12,13 @@
   --color-border: #dddddd;
   --color-surface: #f7f7f7;
   --color-surface-accent: #eef5ff;
+  --color-surface-glass: rgba(255, 255, 255, 0.85);
   --color-danger: #b00020;
   --color-success: #168a2f;
   --color-success-bg: #eefaf0;
   --color-white: #ffffff;
+  --color-sky: #dcefff;
+  --color-snow: #fff;
 
   /* Отступы */
   --space-xs: 4px;
@@ -51,10 +54,8 @@ body {
   line-height: 1.5;
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: url("C:/kr1-html-css-shop/images/forest.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: linear-gradient(to bottom, var(--color-sky), var(--color-snow));
+  min-height: 100vh;
 }
 
 main,
@@ -142,14 +143,20 @@ a:focus-visible {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
   padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-surface-accent);
+  background-image:
+  linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+  url("../images/forest.jpg");
+  background-size: cover;
+  background-position: center;
   border-radius: var(--radius-lg);
-  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .section {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-glass);
 }
 
 .section h2 {
@@ -262,8 +269,11 @@ a:focus-visible {
 .breadcrumbs {
   max-width: var(--container-width);
   margin: 0 auto var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
   font-size: 14px;
   color: var(--color-muted);
+  background-color: var(--color-surface-glass);
 }
 
 .breadcrumbs__link {
@@ -294,6 +304,10 @@ a:focus-visible {
 
 .catalog-products {
   grid-area: products;
+  background-color: var(--color-surface-glass);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  align-self: start;
 }
 
 .filters-form {
